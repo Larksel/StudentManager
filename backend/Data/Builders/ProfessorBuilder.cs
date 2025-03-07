@@ -10,7 +10,7 @@ public class ProfessorBuilder
         modelBuilder.Entity<Professor>().HasKey(p => p.Id);
         modelBuilder.Entity<Professor>().Property(p => p.Name).IsRequired().HasMaxLength(100);
         modelBuilder.Entity<Professor>().Property(p => p.Email).IsRequired().HasMaxLength(100);
-        modelBuilder.Entity<Professor>().Property(p => p.PasswordHash).IsRequired().HasMaxLength(256);
+        modelBuilder.Entity<Professor>().Property(p => p.Password).IsRequired().HasMaxLength(256);
 
         modelBuilder.Entity<Professor>()
             .HasMany(p => p.Students)

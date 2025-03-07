@@ -14,8 +14,8 @@ public class Professor
     [Column("email")]
     public string Email { get; set; }
 
-    [Column("passwordhash")]
-    public string PasswordHash { get; set; }
+    [Column("password")]
+    public string Password { get; set; }
 
     // Relacionamento muitos-para-muitos com Alunos
     public ICollection<Student> Students { get; set; }
@@ -25,12 +25,12 @@ public class Professor
         Students = [];
     }
 
-    public Professor(int professorId, string name, string email, string passwordHash)
+    public Professor(int professorId, string name, string email, string password)
     {
         Id = professorId;
         Name = name;
         Email = email;
-        PasswordHash = passwordHash;
+        Password = password;
         Students = [];
     }
 }
