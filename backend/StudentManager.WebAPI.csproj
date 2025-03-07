@@ -21,7 +21,7 @@
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Data\Builders\" />
-    <Folder Include="Models\" />
+    <Folder Include="Objects\Utilities\" />
     <Folder Include="Services\" />
   </ItemGroup>
 
